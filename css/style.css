@@ -44,8 +44,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section__title{
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
+    font-weight: bold;
+    color: var(--color-1);
+}
+
+.text{
+    color: var(--color-2);
 }
 
 /*NAVBAR */
@@ -93,14 +99,21 @@ ul{
     cursor: pointer;
     color: white;
     transition: 0.2s;
+    margin: 0 0.5rem;
 }
 
 .li__navbar:hover{
-    color: red;
+    color: black;
+    transform: scale(1.2);
 }
+
 
 .nav__links{
     text-decoration: none;
+}
+
+span{
+    color: var(--color-3);
 }
 
 /* MAIN */
@@ -130,8 +143,13 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+}
+
+.nosotros__texto{
+    width: 80%;
+    font-size: 3.5rem;
     text-align: center;
+    margin: 5rem 0;
 }
 
     /* PORTFOLIO */
