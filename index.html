@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./multimedia/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./multimedia/logo.jpg" type="image/x-icon">
     <title>Ventura | Herrera</title>
 </head>
 <body>
 
     <header>
         <nav>
-            <img src="./multimedia/logo.jpg" alt="Logo" class="logo">
+            <a href="/index.html"><img src="./multimedia/logo.jpg" alt="Logo" class="logo"></a>
             <ul>
-                <li>INICIO</li>
-                <li>NOSOTROS</li>
-                <li>PORTFOLIO</li>
-                <li>SERVICIOS</li>
-                <li>CONTACTO</li>
+                <a href="#inicio" class="nav__links"><li class="li__navbar">INICIO</li></a> 
+                <a href="#nosotros" class="nav__links"><li class="li__navbar">NOSOTROS</li></a>
+                <a href="#portfolio" class="nav__links"><li class="li__navbar">PORTFOLIO</li></a>
+                <a href="#servicios" class="nav__links"><li class="li__navbar">SERVICIOS</li></a>
+                <a href="#contacto" class="nav__links"><li class="li__navbar">CONTACTO</li></a>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="container__img_principal">
-            <img src="" alt="">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, distinctio.</h2>
-        </section>
-
-        <section class="nosotros">
-            <h2>¿Quienes somos?</h2>
+        <section class="container__img_principal" id="inicio"></section>
+        
+        <section class="nosotros" id="nosotros">
+            <h2 class="section__title" >¿QUIEN SOY?</h2>
             <p>Soy un estudiante de arquitectura apasionado por la realización de renders. A través de esta plataforma, deseo compartir con ustedes mi amor por la arquitectura y el diseño de interiores.</p>
 
             <p>Durante mi formación en arquitectura, he desarrollado habilidades en programas de renderización, lo que me ha permitido crear modelos 3D realistas y visualizaciones detalladas de proyectos arquitectónicos. En mi tiempo libre, he tenido la oportunidad de trabajar en proyectos de diseño de interiores para amigos y familiares, lo que me ha permitido aplicar mis habilidades de renderización y crear espacios hermosos y funcionales.</p>
@@ -38,16 +36,46 @@
             <p>En mi sitio web, podrás encontrar una muestra de mi trabajo, desde renders de proyectos arquitectónicos hasta diseños de interiores. Además, comparto mi proceso creativo y algunos consejos y trucos para la realización de renders. Espero que disfruten de mi trabajo tanto como yo disfruto creándolo.</p>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
+            <h2 class="section__title" >PORTFOLIO</h2>
+            
 
         </section>
 
-        <section class="servicios">
+        <section class="servicios" id="servicios">
+            <h2 class="section__title" >SERVICIOS</h2>
+            <ul class="ul__servicios">
+                <li class="li__servicios">
+                    <h3 class="li__servicios_title">TITULO</h3>
+                    <img src="" alt="-" class="li__servicios_img">
+                    <p class="li__servicios_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quas.</p>
+                </li>
+                <li class="li__servicios">
+                    <h3 class="li__servicios_title">TITULO</h3>
+                    <img src="" alt="-" class="li__servicios_img">
+                    <p class="li__servicios_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quas.</p>
+                </li>
+                <li class="li__servicios">
+                    <h3 class="li__servicios_title">TITULO</h3>
+                    <img src="" alt="-" class="li__servicios_img">
+                    <p class="li__servicios_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quas.</p>
+                </li>
+                <li class="li__servicios">
+                    <h3 class="li__servicios_title">TITULO</h3>
+                    <img src="" alt="-" class="li__servicios_img">
+                    <p class="li__servicios_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quas.</p>
+                </li>
+                <li class="li__servicios">
+                    <h3 class="li__servicios_title">TITULO</h3>
+                    <img src="" alt="-" class="li__servicios_img">
+                    <p class="li__servicios_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quas.</p>
+                </li>
+            </ul>
 
         </section>
 
-        <section class="contacto">
-
+        <section class="contacto" id="contacto">
+            <h2 class="section__title" >CONTACTO</h2>
         </section>
     </main>
 
@@ -64,6 +92,7 @@
             <p>© 2023 by Ventura | Herrera</p>
         </div>
     </footer>
-
+    <a href="" target="_blank"><img src="./multimedia/whatsapp.png" alt="whatsapp" class="whatsapp"></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
