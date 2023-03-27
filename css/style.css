@@ -14,6 +14,7 @@
 
 /*SCROLL*/
 
+
 body::-webkit-scrollbar {
     width: 12px;            
 }
@@ -86,7 +87,6 @@ ul{
     display: flex;
     flex-direction: row;
     font-size: 1.25rem;
-    width: 30%;
     justify-content: space-between;
     align-items: center;
     margin: 0 3rem 0 0;
@@ -107,6 +107,9 @@ ul{
     transform: scale(1.2);
 }
 
+.li__navbar:active{
+    color: red;
+}
 
 .nav__links{
     text-decoration: none;
@@ -134,7 +137,6 @@ span{
     background-repeat: no-repeat;
     background-position: bottom 100% right 50%;
 }
-
 
     /* NOSOTROS */
 
@@ -176,9 +178,16 @@ span{
 }
 
 .li__servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border: 1px solid black;
     margin: 0 0.5rem;
+    border-radius: 10px;
+    min-width: 30rem;
+    height: 30rem;
 }
 
 .li__servicios_title{
