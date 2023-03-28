@@ -37,12 +37,15 @@ body::-webkit-scrollbar-thumb {
 
  /*GENERAL */
 
-.whatsapp{
+.wsp{
     position: fixed;
+    top: 90%;
+    left: 94%;
+}
+
+.whatsapp{
     width: 7rem;
     height: 7rem;
-    top: 90%;
-    left: 95%;
     opacity: 50%;
     cursor: pointer;
     transition: 0.25s;
@@ -56,58 +59,28 @@ body::-webkit-scrollbar-thumb {
     font-size: 4rem;
     text-align: center;
     font-weight: bold;
-    color: var(--color-1);
+    color: var(--color-negro);
     margin-bottom: 3rem;
 }
 
 .text{
-    color: var(--color-2);
+    color: var(--color-negro);
     padding: 0.5rem 0;
+    font-size: 2rem;
 }
 
 .nosotros, .portfolio, .servicios, .contacto, .container__img_principal{
-    padding-top: 10rem;
+    padding: 2rem 0;
 }
 
-/*NAVBAR */
+/* BOOTSTRAP NAV */
 
 nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 9rem;
     background-color: var(--color-negro);
     border-bottom: 1px solid var(--color-amarillo);
-    position:fixed;
-    width: 100%;
-    z-index: 10000000;
 }
 
-.logo{
-    width: 7rem;
-    height: 7rem;
-    border-radius: 20%;
-    margin-left: 1rem;
-    transition: 0.25s;
-}
-
-.logo:hover{
-    transform: scale(1.1);
-}
-
-ul{
-    display: flex;
-    flex-direction: row;
-    font-size: 1.25rem;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 3rem 0 0;
-    list-style-type: none;
-    padding: 0;
-}
-
-.li__navbar{
+.nav-link{
     font-size: 1.5rem;
     font-weight: lighter;
     cursor: pointer;
@@ -116,22 +89,34 @@ ul{
     margin: 0 0.5rem;
 }
 
-.li__navbar:hover{
-    transform: scale(1.2);
+.nav-link:hover{
     color: var(--color-amarillo);
 }
 
-.li__navbar:active{
-    color: red;
+.navbar-toggler{
+    background-color: white;
+    width: 7rem;
+    height: 5rem;
 }
 
-.nav__links{
-    text-decoration: none;
+.navbar-nav{
+    text-align: center;
 }
 
-span{
-    color: var(--color-amarillo);
-    margin: 0 1.2rem;
+.navbar-toggler-icon{
+    color: black;
+}
+
+.logo{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 20%;
+    margin: 0 1rem;
+    transition: 0.25s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 /* MAIN */
@@ -140,12 +125,8 @@ span{
 
 .container__img_principal{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100vh;
-    position: relative;
     background-image: url(../multimedia/renders/principal.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -158,6 +139,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .nosotros__texto{
@@ -190,11 +172,15 @@ span{
 
         .galeria a{
             height: 200px;
-            width: 500px;
+            width: 350px;
             margin: 20px;
             border-radius: 5px;
             overflow: hidden;
             box-shadow: 0 3px 5px var(--color-negro);
+        }
+
+        .galeria a:hover{
+            box-shadow: 0 0px 10px var(--color-negro);
         }
 
         .galeria__img{
@@ -216,8 +202,6 @@ span{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 80vh;
-    flex-wrap: wrap;
 }
 
 .ul__servicios{
@@ -227,6 +211,7 @@ span{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .li__servicios{
@@ -235,11 +220,11 @@ span{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 0.5rem;
     border-radius: 10px;
     width: 30rem;
     height: 30rem;
     box-shadow: 0 3px 30px var(--color-negro);
+    margin: 1rem;
 }
 
 .li__servicios_title{
@@ -258,7 +243,6 @@ span{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 70vh;
 }
 
 form{
@@ -266,6 +250,7 @@ form{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     height: 50vh;
     padding: 1rem;
     background-color: var(--color-amarillo);
@@ -299,7 +284,7 @@ input:hover, textarea:hover{
     outline: 1px solid var(--color-naranja);
 }
 
-button{
+.btn__form{
     width: 10rem;
     height: 5rem;
     font-size: 1.5rem;
@@ -310,9 +295,10 @@ button{
     color: white;
     cursor: pointer;
     transition: 0.2s;
+    box-shadow: 0px 3px 5px var(--color-negro);
 }
 
-button:hover{
+.btn__form:hover{
     background-color: var(--color-naranja);
 }
 
@@ -356,7 +342,8 @@ footer{
 }
 
 .footer__contacto{
-    width: 30rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .redes{
@@ -381,14 +368,44 @@ footer{
 
 .footer__p{
     font-size: 1.5rem;
-    margin: 0;
+    margin: 0 0;
     font-weight: lighter;
+    width: 25rem;
 }
+
 
 /* MEDIAQUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px){
+    .wsp{
+        left: 87%;
+    }
 
+    .whatsapp{
+        width: 6rem;
+        height: 6rem;
+    }
+    
+}
 
+@media screen and (max-width: 425px) {
+
+    .wsp{
+        left: 83%;
+    }
+
+    .whatsapp{
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    .footer__p{
+        font-size: 1rem;
+    }
+
+    .redes__logo{
+        width: 4rem;
+        height: 4rem;
+    }
 
 }

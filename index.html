@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Experto en renderizado, utilizo técnicas avanzadas de modelado 3D, texturizado y iluminación para crear renders fotorealistas de edificios, interiores y exteriores. Mi enfoque en la calidad y la atención al detalle me permite crear presentaciones atractivas y convincentes de tus proyectos arquitectónicos">
     <meta name="keywords" content="Renderizado de arquitectura, Visualización 3D, Modelado 3D, Diseño de interiores, Diseño de exteriores, Edificios, Fotorealismo, Iluminación, Animación, Realidad virtual, Realidad aumentada, Texturizado, Paisajismo, Escenografía, Infografía, Simulación, Presentaciones arquitectónicas, Portafolio de renderizado de arquitectura, Ejemplos de visualización 3D de alta calidad.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="shortcut icon" href="./multimedia/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,16 +15,30 @@
 <body>
 
     <header>
-        <nav>
-            <a href=""><img src="./multimedia/logo.jpg" alt="Logo" class="logo"></a>
-            <ul>
-                <a href="#inicio" class="nav__links"><li class="li__navbar">INICIO</li></a><span>|</span> 
-                <a href="#nosotros" class="nav__links"><li class="li__navbar">NOSOTROS</li></a><span>|</span> 
-                <a href="#portfolio" class="nav__links"><li class="li__navbar">PORTFOLIO</li></a><span>|</span> 
-                <a href="#servicios" class="nav__links"><li class="li__navbar">SERVICIOS</li></a><span>|</span> 
-                <a href="#contacto" class="nav__links"><li class="li__navbar">CONTACTO</li></a>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-expand-lg">
+
+                <a href=""><img src="./multimedia/logo.jpg" alt="Logo" class="logo"></a>
+                
+                <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#servicios">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
     </header>
 
     <main>
@@ -151,15 +166,16 @@
 
         </section>
 
-        <section class="contacto" id="contacto">
+        <!-- <section class="contacto" id="contacto">
             <h2 class="section__title" >CONTACTO</h2>
             <form action="https://formspree.io/f/mvonbewg"
             method="POST">
                 <input type="email" placeholder="Mail" name="email" required>
                 <textarea name="texto" id="" cols="30" rows="10" placeholder="Escribe tu consulta aquí..." name="message"></textarea>
-                <button type="submit">ENVIAR</button>
+                <button type="submit" class="btn__form">ENVIAR</button>
             </form>
-        </section>
+        </section> -->
+
     </main>
 
     <footer>
@@ -173,7 +189,7 @@
             <div class="footer__div_datos">
                 <div class="footer__contacto">
                     <p class="footer__p">cualquiera@cualquiera.com</p>
-                    <p class="footer__p">+54 9 11 cualquieracualquiera</p>
+                    <p class="footer__p">+54 9 11 0000 0000</p>
                 </div>
                 <div class="redes">
                     <a href="https://www.instagram.com/vh.arq.renders/" target="_blank"><img src="./multimedia/instagram.png" alt="instagram" class="redes__logo"></a>
@@ -184,8 +200,18 @@
         </div>
     </footer>
 
-    <a href="" target="_blank"><img src="./multimedia/whatsapp.png" alt="whatsapp" class="whatsapp"></a>
+    <div class="wsp">
+        <a href="" target="_blank">
+            <img src="./multimedia/whatsapp.png" alt="whatsapp" class="whatsapp">
+        </a>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <script>
         lightGallery(document.querySelector('.galeria'))
     </script>
