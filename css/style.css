@@ -12,12 +12,17 @@
     --color-4: #A0846C;
     --color-amarillo: #FFCA00;
     --color-negro: #031119;
+    --color-naranja: #fb8500;
+}
+
+body{
+    background-color: white;   
 }
 
 /*SCROLL*/
 
 body::-webkit-scrollbar {
-    width: 12px;            
+    width: 12px;         
 }
 
 body::-webkit-scrollbar-track {
@@ -29,6 +34,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid var(--color-2);  /* creates padding around scroll thumb */
 }
+
+ /*GENERAL */
 
 .whatsapp{
     position: fixed;
@@ -50,10 +57,15 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-weight: bold;
     color: var(--color-1);
+    margin-bottom: 3rem;
 }
 
 .text{
     color: var(--color-2);
+}
+
+.nosotros, .portfolio, .servicios, .contacto, .container__img_principal{
+    padding-top: 10rem;
 }
 
 /*NAVBAR */
@@ -222,11 +234,11 @@ span{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid black;
     margin: 0 0.5rem;
     border-radius: 10px;
     width: 30rem;
     height: 30rem;
+    box-shadow: 0 3px 30px var(--color-negro);
 }
 
 .li__servicios_title{
@@ -303,7 +315,7 @@ footer{
     height: 5rem;
     margin: 0.5rem;
     border-radius: 100%;
-    border: 3px solid white;
+    border: 2px solid white;
     transition: 0.3s;
 }
 
