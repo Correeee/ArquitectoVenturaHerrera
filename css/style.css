@@ -19,6 +19,18 @@ body{
     background-color: white;   
 }
 
+/* TRIANGULO */
+
+.triangulo-tricolor {
+    width: 20rem; 
+    height: 20rem; 
+    border-left: 100px solid #428bca;
+    border-top: 50px solid #f0ad4e;
+    border-bottom: 50px solid #d9534f; 
+    border-radius: 100%;
+    margin: 0;
+}
+
 /*SCROLL*/
 
 body::-webkit-scrollbar {
