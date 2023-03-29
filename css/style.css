@@ -60,7 +60,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-weight: bold;
     color: var(--color-negro);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -89,7 +89,6 @@ nav{
 }
 
 .navbar-toggler{
-    background-color: white;
     width: 7rem;
     height: 5rem;
 }
@@ -452,6 +451,14 @@ footer{
         height: 6rem;
     }
     
+}
+
+@media screen and (max-width: 991px){
+
+    .nav-item:hover{
+        background-color: var(--color-naranja);
+    }
+
 }
 
 @media screen and (max-width: 768px){
