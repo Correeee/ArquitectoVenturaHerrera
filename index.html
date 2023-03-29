@@ -174,6 +174,8 @@
             <h2 class="section__title section__title_contacto" >CONTACTO</h2>
             <form action="https://formspree.io/f/mvonbewg"
             method="POST">
+                <input type="text" name="name" id="full-name" placeholder="Nombre completo" required="">
+                <input type="telephone" name="telephone" id="telephone" placeholder="Teléfono / whatsapp ☎">
                 <input type="email" placeholder="Mail" name="email" required>
                 <textarea name="texto" id="" cols="30" rows="10" placeholder="Escribe tu consulta aquí..." name="message"></textarea>
                 <button type="submit" class="btn__form">ENVIAR</button>
@@ -213,11 +215,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 
     <script>
         lightGallery(document.querySelector('.galeria'))
