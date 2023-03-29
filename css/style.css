@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 
 .wsp{
     position: fixed;
-    top: 90%;
+    top: 76%;
     left: 94%;
 }
 
@@ -61,8 +61,9 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-weight: bold;
     color: var(--color-negro);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
+
 
 .nosotros, .portfolio, .servicios, .contacto, .container__img_principal{
     padding: 2rem 0;
@@ -336,6 +337,7 @@ textarea{
     padding: 0.5rem;
 }
 
+
 input:hover, textarea:hover{
     outline: 1px solid var(--color-naranja);
 }
@@ -453,6 +455,12 @@ footer{
     
 }
 
+@media screen and (max-width: 768px){
+    input, textarea{
+        width: 40rem;
+    }
+}
+
 @media screen and (max-width: 425px) {
 
     .wsp{
@@ -473,4 +481,7 @@ footer{
         height: 4rem;
     }
 
+    input, textarea{
+        width: 30rem;
+    }
 }
