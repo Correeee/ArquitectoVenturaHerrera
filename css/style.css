@@ -19,17 +19,6 @@ body{
     background-color: white;   
 }
 
-/* TRIANGULO */
-
-.triangulo-tricolor {
-    width: 20rem; 
-    height: 20rem; 
-    border-left: 100px solid #428bca;
-    border-top: 50px solid #f0ad4e;
-    border-bottom: 50px solid #d9534f; 
-    border-radius: 100%;
-    margin: 0;
-}
 
 /*SCROLL*/
 
@@ -68,13 +57,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section__title{
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     font-weight: bold;
     color: var(--color-negro);
     margin-bottom: 3rem;
 }
-
 
 .nosotros, .portfolio, .servicios, .contacto, .container__img_principal{
     padding: 2rem 0;
@@ -148,11 +136,11 @@ nav{
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
     background-image: url(../multimedia/backgrounds/cube-drawing.png);
     background-repeat: no-repeat;
     background-position:right;
     background-size: 25%;
-    min-height: 100vh;
 }
 
 h1{
@@ -186,6 +174,10 @@ h1{
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    background-image: url(../multimedia/backgrounds/information-technology-specialist-at-work.png);
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 75%;
 }
         /* GALERIA*/
 
@@ -205,11 +197,23 @@ h1{
             margin: 20px;
             border-radius: 5px;
             overflow: hidden;
-            box-shadow: 0 3px 5px var(--color-negro);
+            box-shadow:
+            2.8px 2.8px 13.8px rgba(0, 0, 0, 0),
+            6.7px 6.7px 33.3px rgba(0, 0, 0, 0),
+            12.5px 12.5px 62.6px rgba(0, 0, 0, 0),
+            22.3px 22.3px 111.7px rgba(0, 0, 0, 0),
+            41.8px 41.8px 208.9px rgba(0, 0, 0, 0),
+            100px 100px 500px rgba(0, 0, 0, 0);
         }
 
         .galeria a:hover{
-            box-shadow: 0 0px 10px var(--color-negro);
+            box-shadow:
+            2.8px 2.8px 13.8px rgba(0, 0, 0, 0.011),
+            6.7px 6.7px 33.3px rgba(0, 0, 0, 0.016),
+            12.5px 12.5px 62.6px rgba(0, 0, 0, 0.02),
+            22.3px 22.3px 111.7px rgba(0, 0, 0, 0.024),
+            41.8px 41.8px 208.9px rgba(0, 0, 0, 0.029),
+            100px 100px 500px rgba(0, 0, 0, 0.04);
         }
 
         .galeria__img{
@@ -223,6 +227,10 @@ h1{
             transform: scale(1.2);
         }
 
+        .aos-init{
+            outline: 2px solid var(--color-amarillo);
+        }
+
     /* SERVICIOS */
 
 .servicios{
@@ -232,6 +240,10 @@ h1{
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    background-image: url(../multimedia/backgrounds/information-technology-specialist-at-work-2.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 40%;
 }
 
 .ul__servicios{
@@ -253,8 +265,16 @@ h1{
     border-radius: 10px;
     width: 30rem;
     height: 30rem;
-    box-shadow: 0 3px 30px var(--color-negro);
+    box-shadow:
+    2.8px 2.8px 13.8px rgba(0, 0, 0, 0.011),
+    6.7px 6.7px 33.3px rgba(0, 0, 0, 0.016),
+    12.5px 12.5px 62.6px rgba(0, 0, 0, 0.02),
+    22.3px 22.3px 111.7px rgba(0, 0, 0, 0.024),
+    41.8px 41.8px 208.9px rgba(0, 0, 0, 0.029),
+    100px 100px 500px rgba(0, 0, 0, 0.04);
     margin: 1rem;
+    background-color: white;
+    border: 1px solid var(--color-amarillo);
 }
 
 .li__servicios_title{
@@ -274,6 +294,12 @@ h1{
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    padding: 0;
+    background-color: var(--color-amarillo);
+    background-image: url(../multimedia/backgrounds/successful-state-feedback.png);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 40%;
 }
 
 form{
@@ -282,9 +308,8 @@ form{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     padding: 1rem;
-    background-color: var(--color-amarillo);
     border-radius: 10px;
 }
 
@@ -326,7 +351,14 @@ input:hover, textarea:hover{
     color: white;
     cursor: pointer;
     transition: 0.2s;
-    box-shadow: 0px 3px 5px var(--color-negro);
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+    outline: 1px solid white;
 }
 
 .btn__form:hover{
