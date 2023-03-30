@@ -16,7 +16,8 @@
 }
 
 body{
-    background-color: white;   
+    background-color: white;
+    user-select: none;
 }
 
 /*SCROLL*/
@@ -342,7 +343,7 @@ textarea{
 }
 
 
-input:hover, textarea:hover{
+input:focus, textarea:focus{
     outline: 1px solid var(--color-naranja);
 }
 
@@ -374,6 +375,7 @@ input:hover, textarea:hover{
 /* FOOTER */
 
 footer{
+    user-select:text;
     display: flex;
     flex-direction: row;
     justify-content: center;
