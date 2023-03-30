@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 .whatsapp{
     width: 7rem;
     height: 7rem;
-    opacity: 70%;
+    opacity: 40%;
     cursor: pointer;
     transition: 0.25s;
 }
