@@ -22,17 +22,17 @@ body{
 /*SCROLL*/
 
 body::-webkit-scrollbar {
-    width: 12px;         
+    width: 10px;         
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--color-2);        /* color of the tracking area */
+    background: var(--color-negro);        /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--color-3);    /* color of the scroll thumb */
+    background-color: var(--color-amarillo);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid var(--color-2);  /* creates padding around scroll thumb */
+    border: 1px solid white;  /* creates padding around scroll thumb */
 }
 
  /*GENERAL */
