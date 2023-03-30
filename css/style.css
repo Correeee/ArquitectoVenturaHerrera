@@ -308,6 +308,11 @@ h1{
     font-size: 1.5rem;
 }
 
+.li__servicios_img{
+    width: 8rem;
+    height: 8rem;
+}
+
 /* CONTACTO */
 
 .contacto{
