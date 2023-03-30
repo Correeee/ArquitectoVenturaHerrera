@@ -486,12 +486,25 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+
+    h1{
+        font-size: 3rem;
+    }
+
     input, textarea{
         width: 40rem;
     }
 }
 
 @media screen and (max-width: 425px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .text{
+        font-size: 1.8rem;
+    }
 
     .wsp{
         left: 83%;
@@ -519,16 +532,33 @@ footer{
         width: 35rem;
         height: 35rem;
     }
-}
 
-@media screen and (max-width: 425px) {
     .principal__logo{
         width: 30rem;
         height: 30rem;
     }
 }
 
+@media screen and (max-width: 375px) {
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .text{
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 320px) {
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    .text{
+        font-size: 1.6rem;
+    }
+
     .principal__logo{
         width: 25rem;
         height: 25rem;
