@@ -40,14 +40,14 @@ body::-webkit-scrollbar-thumb {
 
 .wsp{
     position: fixed;
-    top: 76%;
+    top: 75%;
     left: 94%;
 }
 
 .whatsapp{
     width: 7rem;
     height: 7rem;
-    opacity: 50%;
+    opacity: 70%;
     cursor: pointer;
     transition: 0.25s;
 }
@@ -63,7 +63,6 @@ body::-webkit-scrollbar-thumb {
     color: var(--color-negro);
     margin-bottom: 2rem;
 }
-
 
 .nosotros, .portfolio, .servicios, .contacto, .principal{
     padding: 2rem 0;
