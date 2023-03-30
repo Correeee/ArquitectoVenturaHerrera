@@ -127,9 +127,9 @@ nav{
 .principal{
     width: 100%;
     height: 100vh;
-    background-image: url(../multimedia/renders-jpg/principal.jpg);
+    /* background-image: url(../multimedia/renders-jpg/principal.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     padding: 0;
 }
 
