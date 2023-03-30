@@ -270,13 +270,13 @@ h1{
 }
 
 .ul__servicios{
-    width: 100%;
-    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
 }
 
 .li__servicios{
@@ -286,8 +286,11 @@ h1{
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    width: 30rem;
+    width: 50rem;
     height: 30rem;
+    margin: 1rem;
+    background-color: white;
+    border: 1px solid var(--color-amarillo);
     box-shadow:
     2.8px 2.8px 13.8px rgba(0, 0, 0, 0.011),
     6.7px 6.7px 33.3px rgba(0, 0, 0, 0.016),
@@ -295,17 +298,16 @@ h1{
     22.3px 22.3px 111.7px rgba(0, 0, 0, 0.024),
     41.8px 41.8px 208.9px rgba(0, 0, 0, 0.029),
     100px 100px 500px rgba(0, 0, 0, 0.04);
-    margin: 1rem;
-    background-color: white;
-    border: 1px solid var(--color-amarillo);
 }
 
 .li__servicios_title{
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .li__servicios_p{
     font-size: 1.5rem;
+    padding: 0 1rem;
 }
 
 .li__servicios_img{
