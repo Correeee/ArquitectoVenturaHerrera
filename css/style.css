@@ -508,6 +508,11 @@ footer{
     input, textarea{
         width: 40rem;
     }
+
+    .galeria a{
+        height: 200px;
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -551,6 +556,7 @@ footer{
         width: 30rem;
         height: 30rem;
     }
+
 }
 
 @media screen and (max-width: 375px) {
