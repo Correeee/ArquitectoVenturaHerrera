@@ -3,6 +3,7 @@
     padding: 0;
     font-size: 62.5%;
     font-family: 'Alata', sans-serif;
+    scroll-behavior:smooth;
 }
 
 :root{
