@@ -557,6 +557,9 @@ footer{
         height: 30rem;
     }
 
+    .li__servicios{
+        margin: 1rem 3rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
